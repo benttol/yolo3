@@ -22,6 +22,8 @@ Siapin alat dan bahannya.
 > apt update && apt upgrade
 > git clone https://github.com/1NS0MNIA/yolo3
 > cd yolo3
+> npm i node-tesseract-ocr
+> pkg install tesseract
 > npm i -g cwebp && npm i -g ytdl && npm i  && npm i got && node index js
 > Tinggal scan kode qr yeee...done
 ```
