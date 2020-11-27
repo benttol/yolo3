@@ -670,7 +670,7 @@ _${kata}_
    {
     var items = ["type wallpaper","nekonime","anime","hentai","nsfwneko"];
     var anim = items[Math.floor(Math.random() * items.length)];
-    var url = get("https://mhankbarbar.herokuapp.com/api/random/hentai?apiKey=lGjYt4zA5SQlTDx9z9Ca";
+    var url = "https://mhankbarbar.herokuapp.com/api/random/hentai?apiKey=lGjYt4zA5SQlTDx9z9Ca";
     
     axios.get(url)
       .then((result) => {
