@@ -307,7 +307,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=lGjYt4z
 
 if (text.includes("!tts")){
 const teks = text.replace(/!tts /, "")
-const gtts = (`http://scrap.terhambar.com/tts?kata={teks}`)
+const gtts = (`http://scrap.terhambar.com/tts?kata=${teks}`)
     conn.sendMessage(id, gtts ,MessageType.text);
 }
 
@@ -378,10 +378,10 @@ axios.get(`https://api.haipbis.xyz/bitly?url=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes("#namaninja")){
-const teks = text.replace(/#namaninja /, "")
+if (text.includes("!namaninja")){
+const teks = text.replace(/!namaninja /, "")
 axios.get(`https://api.terhambar.com/ninja?nama=${teks}`).then((res) => {
-	conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
+	conn.sendMessage(id, '*Maaf Fitur Ini Error*', MessageType.text)
     let hasil = `Nama Ninja kamu🌟 \n\n${res.message.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
